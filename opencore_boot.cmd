@@ -7,6 +7,9 @@ goto boot
 cls
 color 80
 echo Poggersire DOS OpenCore Kernel 1.0
+echo.
+OpenRuntime.cmd
+echo.
 echo Kernel started from folder %cd%
 echo EFI system partition located at /EFI.
 echo Date and time is %date% %time%
