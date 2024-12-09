@@ -1,7 +1,7 @@
 @echo off
 :boothome
 echo ^>Loading initial RamDisk device
-choice /c ONR /m "Press O to boot from OpenCore kernel or press R to boot into rescue mode."
+choice /c OR /m "Press O to boot from OpenCore kernel or press R to boot into rescue mode."
 if %errorlevel% == 1 goto boot
 if %errorlevel% == 2 goto rescue
 :boot
