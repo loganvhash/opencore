@@ -1,10 +1,9 @@
 @echo off
 :boothome
 echo ^>Loading initial RamDisk device
-choice /c ONR /m "Press O to boot from OpenCore kernel or press N to boot from Network. Or press R to boot into rescue mode."
+choice /c ONR /m "Press O to boot from OpenCore kernel or press R to boot into rescue mode."
 if %errorlevel% == 1 goto boot
-if %errorlevel% == 2 goto netboot
-if %errorlevel% == 3 goto rescue
+if %errorlevel% == 2 goto rescue
 :boot
 echo Booting from Poggersire DOS OpenCore kernel
 echo.
@@ -14,14 +13,6 @@ echo   kernel instead of using a custom made kernel.
 echo.
 pause
 exit
-:netboot
-echo Starting iPXE over IP4
-echo.
-echo Downloading lightweight operating system
-echo Booting lightweight operating system.
-echo.
-echo Error while downloading lightweight OS. Booting to rescue mode
-goto rescue
 :rescue
 echo.
 echo Starting OpenCore rescue mode
