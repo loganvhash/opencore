@@ -20,7 +20,7 @@ echo Date and time is %date% %time%
 echo.
 echo.
 echo.
-echo Add your own commands to run in the Preboot Execution Enviorment into the StartupScripts.bat file. This is only an example as the
+echo Add your own commands to run in the Preboot Execution Enviorment into the source code of the boot script file (OpenCore_boot.cmd). This is only an example as the
 echo commands in here will first print this message out and wait for user input.
 echo.
 echo You can add commands used for booting a operating system or others.
