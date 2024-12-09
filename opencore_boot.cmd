@@ -21,7 +21,4 @@ echo commands in here will first print this message out and wait for user input.
 echo.
 echo You can add commands used for booting a operating system or others.
 echo.
-echo Press any key to shutdown.
-pause >null
-del null
-exit
+pause
