@@ -11,7 +11,7 @@ echo.
 set /p choice=Make a choice from 1-3:
 if %choice% == 1 goto KernelBoot
 if %choice% == 2 goto UEFI
-if %choice% == 3 cmd
+if %choice% == 3 goto Rescue
 :kernelboot
 cls
 cmd /k opencore_boot.cmd
@@ -24,4 +24,31 @@ echo.
 echo No operating system has been loaded yet. You may hold down the power switch to reboot your computer.
 echo.
 pause
-  
+:rescue
+cls
+echo.
+echo.
+echo.
+echo                     --------------------------------------------------
+echo                     I OpenCore rescue mode will attempt to restore   I
+echo                     I the kernel settings to facotry defaults.       I
+echo                     I                                                I
+echo                     I                                                I
+echo                     I                                                I
+echo                     I                                                I
+echo                     I                                                I
+echo                     I                                                I
+echo                     I                                                I
+echo                     -------------------------------------------------
+echo.
+pause
+echo.
+echo.
+mkdir FactoryImage
+copy *.* FactoryImage
+del *.* /q
+cd FactoryImage
+copy *.* ..
+cd ..
+cls
+bootmgr
