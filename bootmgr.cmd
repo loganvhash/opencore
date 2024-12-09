@@ -51,4 +51,12 @@ cd FactoryImage
 copy *.* ..
 cd ..
 cls
-bootmgr
+echo Rebooting...
+timeout 1 /nobreak >null
+cls
+echo Starting up to factory image_
+echo.
+timeout 1 /nobreak >null
+cls
+cd FactoryImage
+bootmgr.cmd
