@@ -14,7 +14,7 @@ if %choice% == 2 goto UEFI
 if %choice% == 3 cmd
 :kernelboot
 cls
-opencore_boot.cmd
+cmd /k opencore_boot.cmd
 :UEFI
 cls
 echo Poggersire Industries OpenCore UEFI
