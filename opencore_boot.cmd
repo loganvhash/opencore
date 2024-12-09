@@ -6,7 +6,7 @@ goto boot
 :boot
 cls
 color 80
-echo Poggersire DOS OpenCore Kernel 1.0
+echo Poggersire DOS OpenCore Kernel
 echo.
 OpenRuntime.cmd
 echo.
