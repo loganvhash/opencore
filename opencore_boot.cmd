@@ -8,7 +8,11 @@ cls
 color 80
 echo Poggersire DOS OpenCore Kernel
 echo.
-OpenRuntime.cmd
+echo.
+echo Initalizing Poggersire DOS OpenRuntime...
+timeout 2 /nobreak >null
+echo.
+echo Initalization complete
 echo.
 echo Kernel started from folder %cd%
 echo EFI system partition located at /EFI.
