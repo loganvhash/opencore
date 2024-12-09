@@ -20,13 +20,8 @@ echo.
 echo Downloading lightweight operating system
 echo Booting lightweight operating system.
 echo.
-echo.
-echo   Add commands that you can use to boot from a network based operating
-echo   system here, if you want it to use the Poggersire DOS OpenCore kernel
-echo   instead of using a custom made kernel.
-echo.
-pause
-exit
+echo Error while downloading lightweight OS. Booting to rescue mode
+goto rescue
 :rescue
 echo.
 echo Starting OpenCore rescue mode
