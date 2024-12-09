@@ -24,7 +24,6 @@ echo.
 echo   Add commands that you can use to boot from a network based operating
 echo   system here, if you want it to use the Poggersire DOS OpenCore kernel
 echo   instead of using a custom made kernel.
-exit
 echo.
 pause
 exit
